@@ -35,22 +35,22 @@
  
 	2.	ОБЩЕЕ ОПИСАНИЕ ПРОДУКТА
 
-Интерфейс пользователя представлен на <a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/Music_cataloguer_interface.png" target="_blank">Интерфейс</a>
+Интерфейс пользователя имеет следующи вид:
+![Каталогизатор музыки](https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/Music_cataloguer_interface.png)
 Для корректной работы разрабатываемого программного средства потребуется следующее программное обеспечение: Java SE Development Kit 8 Update 121 (64-bit)-для 64 разрядных систем и Java SE Development Kit 8 Update 121 (32-bit)-для 32 разрядных. Программное обеспечение можно найти на сайте http://www.oracle.com.
 
 	2.1.	Преимущество продукта
 Преимущество данного программного продукта - наличие кроссплатформенности и относительно незначительного размера исполняемого файла.
 Стоит выделить 2 наиболее весомых конкурентоспособных приложений аналогов:
 
-a.    <a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/OrangeCD%20Suite.png" target="_blank">OrangeCD_Suite</a>
+a.![OrangeCD Suite](https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/OrangeCD%20Suite.png)
 
-b.    <a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/MediaMonkey.png" target="_blank">MediaMonkey_4.1.9.1764</a>
+b.![MediaMonkey 4.1.9.1764](https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/MediaMonkey.png)
 
 		2.1.1.	 Стороннее программное обеспечение
 Единственное дополнительное программное обеспечение необходимое для корректной работы приложения - Java SE Development Kit 8 Update 60 и выше в зависимости от операционной системы, на которой будет использоваться программный продукт. Дополнительное программное обеспечение модно скачать на сайте http://www.oracle.com.
 
-		2.1.2.	Интерфейсы пользователя
-Начальный пользовательский интерфейс, с которым будет взаимодействовать пользователь, представлен на <a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/Music_cataloguer_interface.png" target="_blank">Интерфейс</a> и состоит из 3 частей: списка всех композиций, альбомов, исполнителей или жанров в зависимости от выбранной вкладки, элемента списка композиций содержащихся в данном альбоме, жанре или исполнителе в зависимости от выбранной вкладки, а также окна с подробной информацией о жанре, исполнителе и альбоме проигрываемой композиции.
+Интерфейс, с которым будет взаимодействовать пользователь, состоит из 3 частей: списка всех композиций, альбомов, исполнителей или жанров в зависимости от выбранной вкладки, элемента списка композиций содержащихся в данном альбоме, жанре или исполнителе в зависимости от выбранной вкладки, а также окна с подробной информацией о жанре, исполнителе и альбоме проигрываемой композиции.
 При переключении вкладок пользователь может сортировать композиции по нужному ему параметру, и выводить подробную информацию нужного типа.
 
 		2.1.3.	Ограничение на размер используемой памяти
