@@ -42,9 +42,9 @@
 Преимущество данного программного продукта - наличие кроссплатформенности и относительно незначительного размера исполняемого файла.
 Стоит выделить 2 наиболее весомых конкурентоспособных приложений аналогов:
 
-	a.	<a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/OrangeCD%20Suite.png" target="_blank">OrangeCD_Suite</a>
+a.    <a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/OrangeCD%20Suite.png" target="_blank">OrangeCD_Suite</a>
 
-	b.	<a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/MediaMonkey.png" target="_blank">MediaMonkey_4.1.9.1764</a>
+b.    <a href="https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/MediaMonkey.png" target="_blank">MediaMonkey_4.1.9.1764</a>
 
 		2.1.1.	 Стороннее программное обеспечение
 Единственное дополнительное программное обеспечение необходимое для корректной работы приложения - Java SE Development Kit 8 Update 60 и выше в зависимости от операционной системы, на которой будет использоваться программный продукт. Дополнительное программное обеспечение модно скачать на сайте http://www.oracle.com.
