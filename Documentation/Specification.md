@@ -35,7 +35,7 @@
  
 	2.	ОБЩЕЕ ОПИСАНИЕ ПРОДУКТА
 
-Интерфейс пользователя имеет следующи вид:
+Интерфейс пользователя имеет следующий вид:
 ![Каталогизатор музыки](https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documentation/Pictures/Music_cataloguer_interface.png)
 Для корректной работы разрабатываемого программного средства потребуется следующее программное обеспечение: Java SE Development Kit 8 Update 121 (64-bit)-для 64 разрядных систем и Java SE Development Kit 8 Update 121 (32-bit)-для 32 разрядных. Программное обеспечение можно найти на сайте http://www.oracle.com.
 
