@@ -65,8 +65,8 @@ public class Controller {
     {
         ArrayList<String> trackNameTempList = new ArrayList<>();
 
-        for (String alb : mp3AlbumList) {
-            trackNameTempList.add(alb);
+        for (String album : mp3AlbumList) {
+            trackNameTempList.add(album);
         }
         trackNameList = FXCollections.observableArrayList(trackNameTempList);
         trackList_Albums.setItems(trackNameList);
@@ -76,8 +76,8 @@ public class Controller {
     {
         ArrayList<String> trackNameTempList = new ArrayList<>();
 
-        for (String art : mp3ArtistList) {
-            trackNameTempList.add(art);
+        for (String artist : mp3ArtistList) {
+            trackNameTempList.add(artist);
         }
         trackNameList = FXCollections.observableArrayList(trackNameTempList);
         trackList_Artists.setItems(trackNameList);
@@ -98,9 +98,9 @@ public class Controller {
     {
         ArrayList<String> trackNameTempList = new ArrayList<>();
         String selectedGenre = trackList_Genres.getSelectionModel().getSelectedItem();
-        for (AudioParser fil : mp3List) {
-            if(fil.genre.equals(selectedGenre))
-                trackNameTempList.add(fil.sourceFile.getName());
+        for (AudioParser file : mp3List) {
+            if(file.genre.equals(selectedGenre))
+                trackNameTempList.add(file.sourceFile.getName());
         }
         trackNameList = FXCollections.observableArrayList(trackNameTempList);
         currentTagTrackList.setItems(trackNameList);
@@ -110,9 +110,9 @@ public class Controller {
     {
         ArrayList<String> trackNameTempList = new ArrayList<>();
         String selectedGenre = trackList_Albums.getSelectionModel().getSelectedItem();
-        for (AudioParser fil : mp3List) {
-            if(fil.album.equals(selectedGenre))
-                trackNameTempList.add(fil.sourceFile.getName());
+        for (AudioParser file : mp3List) {
+            if(file.album.equals(selectedGenre))
+                trackNameTempList.add(file.sourceFile.getName());
         }
         trackNameList = FXCollections.observableArrayList(trackNameTempList);
         currentTagTrackList.setItems(trackNameList);
@@ -122,9 +122,9 @@ public class Controller {
     {
         ArrayList<String> trackNameTempList = new ArrayList<>();
         String selectedGenre = trackList_Artists.getSelectionModel().getSelectedItem();
-        for (AudioParser fil : mp3List) {
-            if(fil.artist.equals(selectedGenre))
-                trackNameTempList.add(fil.sourceFile.getName());
+        for (AudioParser file : mp3List) {
+            if(file.artist.equals(selectedGenre))
+                trackNameTempList.add(file.sourceFile.getName());
         }
         trackNameList = FXCollections.observableArrayList(trackNameTempList);
         currentTagTrackList.setItems(trackNameList);
@@ -133,9 +133,9 @@ public class Controller {
     public void trackList_CurrentTagTracks_OnClick()
     {
         AudioParser selectedTrack = mp3List.get(0);
-        for (AudioParser curr : mp3List)
-            if (curr.sourceFile.getName().equals(currentTagTrackList.getSelectionModel().getSelectedItem()))
-                selectedTrack = curr;
+        for (AudioParser currentMp3 : mp3List)
+            if (currentMp3.sourceFile.getName().equals(currentTagTrackList.getSelectionModel().getSelectedItem()))
+                selectedTrack = currentMp3;
         albumLabel.getChildren().clear();
         albumLabel.getChildren().add(new Text(selectedTrack.album));
         artistLabel.getChildren().clear();
@@ -151,12 +151,12 @@ public class Controller {
             loadingLabel.setText("Empty path");
             return;
         }
-        TryToFindAllFiles(loadPath.getText());
+        tryToFindAllFiles(loadPath.getText());
         loadingLabel.setText("Loaded!!!");
         init();
     }
 
-    public void TryToFindAllFiles(String startString) {
+    public void tryToFindAllFiles(String startString) {
         new FileFinder(startString + "\\").start();
     }
 

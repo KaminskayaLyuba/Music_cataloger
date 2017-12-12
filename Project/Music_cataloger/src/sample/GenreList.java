@@ -4,7 +4,7 @@ package sample;
  * Created by люба on 29.10.2017.
  */
 public class GenreList {
-    public static String[] gens()
+    public static String[] genres()
     {
         String[] a = new String[81];
         a[0] = "Blues\n";

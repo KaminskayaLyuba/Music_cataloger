@@ -13,15 +13,15 @@ import java.io.IOException;
  */
 public class AudioParser {
     public File sourceFile;
-    MP3File mp3file;
+    MP3File mp3File;
     public String genre,album,artist;
-    public static String[] genres=GenreList.gens();
+    public static String[] genres=GenreList.genres();
     public AudioParser(File source)
     {
         sourceFile=source;
         try{
-            mp3file = new MP3File(sourceFile);
-            ID3v1 tag = mp3file.getID3v1Tag();
+            mp3File = new MP3File(sourceFile);
+            ID3v1 tag = mp3File.getID3v1Tag();
             album = tag.getAlbum();
             if (tag.getGenre()>=0&&tag.getGenre()<80)
                 genre = genres[tag.getGenre()];

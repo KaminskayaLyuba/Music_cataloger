@@ -9,19 +9,19 @@ import static sample.Controller.mp3AlbumList;
  * Created by люба on 29.10.2017.
  */
 public class FileFinder {
-    private String str=new String();
-    public FileFinder(String s) {
-        str=s;
+    private String startPath=new String();
+    public FileFinder(String start) {
+        startPath=start;
     }
 
     public void start() {
         try{
-            File f = new File(str);
-            for (File s : f.listFiles()) {
-                if (s.isFile()) {
-                    if (s.getName().endsWith(".mp3"))
+            File root = new File(startPath);
+            for (File currentFile : root.listFiles()) {
+                if (currentFile.isFile()) {
+                    if (currentFile.getName().endsWith(".mp3"))
                     {
-                        mp3List.add(new AudioParser(s));
+                        mp3List.add(new AudioParser(currentFile));
                         if(!mp3ArtistList.contains(mp3List.get(mp3List.size()-1).artist))
                             mp3ArtistList.add(mp3List.get(mp3List.size()-1).artist);
                         if(!mp3AlbumList.contains(mp3List.get(mp3List.size()-1).album))
@@ -29,8 +29,8 @@ public class FileFinder {
                         // i++;
                         // if (i%100==0) System.out.println(i);
                     }
-                } else if (s.isDirectory()) {
-                    new FileFinder(s.getAbsolutePath()).start();
+                } else if (currentFile.isDirectory()) {
+                    new FileFinder(currentFile.getAbsolutePath()).start();
                 }
             }
         }
