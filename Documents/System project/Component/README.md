@@ -1,3 +1,3 @@
-# Диаграмма последовательностей
+# Диаграмма компонентов
 
-![Диаграмма последовательностей](https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documents/System%20project/Sequence/SequenceDiagram.jpg)
+![Диаграмма компонентов](https://github.com/KaminskayaLyuba/Music_cataloger/blob/master/Documents/System%20project/Component/ComponentDiagram.jpg)
